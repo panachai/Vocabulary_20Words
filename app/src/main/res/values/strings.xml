@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">Vocabulary_20Words</string>
+    <string name="app_name2">Vocabulary 20 Words</string>
+    <string name="antarctica">Antarctica</string>
+    <string name="belgium">Belgium</string>
+    <string name="brazil">Brazil</string>
+    <string name="japan">Japan</string>
+    <string name="korea_north">Korea North</string>
+    <string name="korea_south">Korea South</string>
+    <string name="laos">Laos</string>
+    <string name="morocco">Morocco</string>
+    <string name="russia">Russia</string>
+    <string name="saudi_arabia">Saudi Arabia</string>
+    <string name="serbia">Serbia</string>
+    <string name="singapore">Singapore</string>
+    <string name="spain">Spain</string>
+    <string name="sweden">Sweden</string>
+    <string name="switzerland">Switzerland</string>
+    <string name="taiwan">Taiwan</string>
+    <string name="thai">Thai</string>
+    <string name="united_kingdom">United Kingdom</string>
+    <string name="united_states">United States</string>
+    <string name="vietnam">Vietnam</string>
+    <string name="thai_language">Thai Language</string>
+    <string name="eng_language">English Language</string>
+    <string name="explain_language">Click to select the language you want to listen.</string>
+    <string name="title_practice_list">Practice</string>
+    <string name="title_practice_detail">Practice Detail</string>
+
+    <string name="complete">Complete</string>
+
+    <string name="tvQ1">1. Select this flag is country</string>
+    <string name="tvQ2">2. Select this flag is country </string>
+    <string name="tvQ3">3. Select this flag is country </string>
+    <string name="tvQ4">4. Select this flag is country </string>
+    <string name="tvQ5">5. Select this flag is country </string>
+    <string name="tvQ6">6. Select this flag is country </string>
+    <string name="tvQ7">7. Select this flag is country </string>
+    <string name="tvQ8">8. Select this flag is country </string>
+    <string name="tvQ9">9. Select this flag is country </string>
+    <string name="tvQ10">10. Select this flag is country </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+
+</resources>

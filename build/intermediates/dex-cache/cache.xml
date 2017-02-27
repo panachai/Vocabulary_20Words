@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="B:\AndroidStudioProject\Vocabulary_20Words\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0fb891e8f0cfba0513043a7bb357513d229ca2cd">
+        <dex dex="B:\AndroidStudioProject\Vocabulary_20Words\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-25.1.1_0e47a805bfcc53c0e97f7ac29d7a8fbf667cbcf6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="B:\AndroidStudioProject\Vocabulary_20Words\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="02741d05d4b697fba5e279e9881aaa1da0ca7c7f">
+        <dex dex="B:\AndroidStudioProject\Vocabulary_20Words\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-25.1.1_b7c2416fa2c37ecaa3839f6a721af7a9aca2b811\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="B:\AndroidStudioProject\Vocabulary_20Words\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c03bf57f358aa10d253f21989e93bcf6014b3b17">
+        <dex dex="B:\AndroidStudioProject\Vocabulary_20Words\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-25.1.1_4f7b659de5d20e8317b53b53a1518f062f21001c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="B:\AndroidStudioProject\Vocabulary_20Words\app\build\intermediates\exploded-aar\com.android.support\transition\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="15b049fedbd8e3926bf99d9e45dfc9b2a1043bb9">
+        <dex dex="B:\AndroidStudioProject\Vocabulary_20Words\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-transition-25.1.1_b5f51ef27aec8d0cce453fb8880054b4336de486\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="B:\AndroidStudioProject\Vocabulary_20Words\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3e0d65c17a88eec33a6f7dafa8ec08c22d8bb7b0">
+        <dex dex="B:\AndroidStudioProject\Vocabulary_20Words\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_41506b31bd776ce1c8eaa18d86be461eee5446ee\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="B:\AndroidStudioProject\Vocabulary_20Words\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0d191c1a09e4892d059e5ce749e4ad4e08129e35">
+        <dex dex="B:\AndroidStudioProject\Vocabulary_20Words\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-25.1.1_186994ff1de8ee6eff711fa629e3b35320b9232a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="B:\AndroidStudioProject\Vocabulary_20Words\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e30d362864fb2b300b45146028f8e3359b7b19f5">
+        <dex dex="B:\AndroidStudioProject\Vocabulary_20Words\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_4b1bfd273774bda9579472ea051f996703ff1369\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="B:\AndroidStudioProject\Vocabulary_20Words\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c9649557905bf7a80fca9e0d54cbcb7662627860">
+        <dex dex="B:\AndroidStudioProject\Vocabulary_20Words\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-25.1.1_dcad7b08f36232e2800f692af19e56bf3d878dca\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="B:\AndroidStudioProject\Vocabulary_20Words\app\build\intermediates\exploded-aar\com.android.support\design\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="cd7951e04cfb9a8bf008d544a478d9a8d8192d38">
+        <dex dex="B:\AndroidStudioProject\Vocabulary_20Words\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-25.1.1_cb459a5b8f296e8e6873769f62b05c8e02efa8a3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="B:\AndroidStudioProject\Vocabulary_20Words\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="B:\AndroidStudioProject\Vocabulary_20Words\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-25.1.1_2f84ba25d2ef19a2e815808812e5b7cc9f09b108\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="B:\AndroidStudioProject\Vocabulary_20Words\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e2719c102dca3a7a5b02ce07f769362da6ddb4ab">
+        <dex dex="B:\AndroidStudioProject\Vocabulary_20Words\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-25.1.1_0e5effd874739bde300fb2cd56064979c1ed7396\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="B:\AndroidStudioProject\Vocabulary_20Words\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7bde4c34162092e0a77e7f12dc85ed77c484cf5c">
+        <dex dex="B:\AndroidStudioProject\Vocabulary_20Words\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-25.1.1_609f79d498fc71863501aae1fa882d8e78c7c061\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\KILLERCON\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.1.1\support-annotations-25.1.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b59b6ee8d6ecc03e672d253800430343493a6ed8">
+        <dex dex="B:\AndroidStudioProject\Vocabulary_20Words\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.1.1_d84f1a58ae202eeddf2bdbcd624728ce95e51f15\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="B:\AndroidStudioProject\Vocabulary_20Words\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3e04ac8ca644ea7baddf6fdcf72e15c79e9df94a">
+        <dex dex="B:\AndroidStudioProject\Vocabulary_20Words\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-25.1.1_1632bddb7273708b3e7ec1cf309783301233ccf1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="B:\AndroidStudioProject\Vocabulary_20Words\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ecb496cc08dd52551fc5ec6db3bc0632e95a89bb">
+        <dex dex="B:\AndroidStudioProject\Vocabulary_20Words\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-25.1.1_1923cf2286b38152ff7e81cdc3cf5b895f537001\classes.dex" />
+    </item>
+
+</items>

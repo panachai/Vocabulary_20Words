@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Vocabulary_20Words</string>
+    <string name="app_name2">Vocabulary 20 Words</string>
+    <string name="antarctica">แอนตาร์กติกา</string>
+    <string name="belgium">เบลเยียม</string>
+    <string name="brazil">บราซิล</string>
+    <string name="japan">ญี่ปุ่น</string>
+    <string name="korea_north">เกาหลีเหนือ</string>
+    <string name="korea_south">เกาหลีใต้</string>
+    <string name="laos">ลาว</string>
+    <string name="morocco">โมร็อกโก</string>
+    <string name="russia">รัสเซีย</string>
+    <string name="saudi_arabia">ซาอุดิอาราเบีย</string>
+    <string name="serbia">เซอร์เบีย</string>
+    <string name="singapore">สิงคโปร์</string>
+    <string name="spain">สเปน</string>
+    <string name="sweden">สวีเดน</string>
+    <string name="switzerland">สวิสเซอร์แลนด์</string>
+    <string name="taiwan">ไต้หวัน</string>
+    <string name="thai">ไทย</string>
+    <string name="united_kingdom">อังกฤษ</string>
+    <string name="united_states">สหรัฐ</string>
+    <string name="vietnam">เวียดนาม</string>
+    <string name="thai_language">ภาษาไทย</string>
+    <string name="eng_language">ภาษาอังกฤษ</string>
+    <string name="explain_language">คลิกเพื่อเลือกภาษาที่ต้องการฟัง</string>
+
+    <string name="complete">เสร็จ</string>
+
+
+</resources>
