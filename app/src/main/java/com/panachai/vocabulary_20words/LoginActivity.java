@@ -36,14 +36,9 @@ import java.util.List;
 
 import static android.Manifest.permission.READ_CONTACTS;
 
-/**
- * A login screen that offers login via email/password.
- */
 public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<Cursor> {
+    DBHelper mydb;
 
-    /**
-     * Id to identity READ_CONTACTS permission request.
-     */
     private static final int REQUEST_READ_CONTACTS = 0;
 
     /**
@@ -96,7 +91,6 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         bt_register.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
-
                 Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
                 startActivity(intent);
             }
@@ -156,6 +150,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
      * errors are presented and no actual login attempt is made.
      */
     private void attemptLogin() {
+        mydb = new DBHelper(this);
         if (mAuthTask != null) {
             return;
         }
@@ -198,7 +193,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             // perform the user login attempt.
 
 
-            if(email.equals("asd@gmail.com") && password.equals("123456")){
+            if(1!=1){
                 showProgress(true);
                 Intent intent = new Intent(this, MainActivity.class);
                 startActivity(intent);
@@ -206,6 +201,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
                 Toast.makeText(LoginActivity.this,
                         "Email or Password not correct (Login Fail)", Toast.LENGTH_SHORT).show();
             }
+
 
 
             /*

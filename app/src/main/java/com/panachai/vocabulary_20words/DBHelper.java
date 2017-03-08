@@ -6,6 +6,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -74,6 +75,20 @@ public class DBHelper extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor rs = db.rawQuery("select * from "+TB_Name+" where "+FLD_ID+"="+id,null); //null คือเงื่อนไข where (ในกรณีไม่ได้ hardcode)
         return rs;
+    }
+
+    //เวลา Select จะใช้ผ่าน cursor
+    public boolean checklogin(String email){
+        //กำหนดให้อ่านข้อมูลจากตารางได้อย่างเดียว
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor rs = db.rawQuery("select * from "+TB_Name+" where "+FLD_Email+"="+email,null); //null คือเงื่อนไข where (ในกรณีไม่ได้ hardcode)
+
+        rs.moveToFirst();
+
+        if(rs.getCount()>0){
+            return true;
+        }else return false;
+
     }
 
     //Uppdate Data
@@ -168,4 +183,7 @@ public class DBHelper extends SQLiteOpenHelper {
         }
         return arrayList;
     }
+
+
+
 }
