@@ -113,6 +113,7 @@ public class DBHelper extends SQLiteOpenHelper {
     }
 */
 
+/*
     //Get All Record
     public ArrayList<String> getAllProfile(){
         //ประกาศ ArrayList สำหรับเก็บข้อมูลทุก record ที่จะคืนกลับ
@@ -129,7 +130,7 @@ public class DBHelper extends SQLiteOpenHelper {
         }
         return arrayList;
     }
-
+*/
     //-----------------------------------------------------------------------------//
 
     //Insert new Score
@@ -166,6 +167,8 @@ public class DBHelper extends SQLiteOpenHelper {
     }
 */
 
+/*
+
     //Get All Record
     public ArrayList<String> getAllScore(){
         //ประกาศ ArrayList สำหรับเก็บข้อมูลทุก record ที่จะคืนกลับ
@@ -183,7 +186,7 @@ public class DBHelper extends SQLiteOpenHelper {
         }
         return arrayList;
     }
-
+*/
 
 
 }
