@@ -55,7 +55,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
 
     // UI references.
     private AutoCompleteTextView mEmailView;
-    private EditText mPasswordView;
+    private EditText mPasswordView,musertest;
     private View mProgressView;
     private View mLoginFormView;
 
@@ -66,6 +66,8 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         // Set up the login form.
         mEmailView = (AutoCompleteTextView) findViewById(R.id.email);
         populateAutoComplete();
+
+        musertest = (EditText) findViewById(R.id.usertest);
 
         mPasswordView = (EditText) findViewById(R.id.password);
         mPasswordView.setOnEditorActionListener(new TextView.OnEditorActionListener() {
@@ -92,6 +94,15 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button intentDB = (Button) findViewById(R.id.intentDB);
+        intentDB.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LoginActivity.this, testDatabaseMain.class);
                 startActivity(intent);
             }
         });
@@ -151,6 +162,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
      */
     private void attemptLogin() {
         mydb = new DBHelper(this);
+
         if (mAuthTask != null) {
             return;
         }
@@ -162,6 +174,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         // Store values at the time of the login attempt.
         String email = mEmailView.getText().toString();
         String password = mPasswordView.getText().toString();
+        String usertest = musertest.getText().toString();
 
         boolean cancel = false;
         View focusView = null;
@@ -192,16 +205,21 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             // Show a progress spinner, and kick off a background task to
             // perform the user login attempt.
 
+            Toast.makeText(LoginActivity.this,
+                    ""+mydb.checklogin(usertest)+" "+usertest, Toast.LENGTH_SHORT).show();
 
-            if(1!=1){
-                showProgress(true);
-                Intent intent = new Intent(this, MainActivity.class);
-                startActivity(intent);
+            /*
+            if(mydb.checklogin(email)){
+
+                    showProgress(true);
+                    Intent intent = new Intent(this, MainActivity.class);
+                    startActivity(intent);
+
             }else{
                 Toast.makeText(LoginActivity.this,
                         "Email or Password not correct (Login Fail)", Toast.LENGTH_SHORT).show();
             }
-
+*/
 
 
             /*
