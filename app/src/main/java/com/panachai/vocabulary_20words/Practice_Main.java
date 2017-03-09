@@ -10,6 +10,12 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+
+
 public class Practice_Main extends AppCompatActivity {
 
     private RadioGroup radioGroup1;
@@ -35,6 +41,7 @@ public class Practice_Main extends AppCompatActivity {
     private Button btnComplete;
     private boolean statusRadio;
     private int score;
+    private DBHelper mydb;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -68,11 +75,6 @@ public class Practice_Main extends AppCompatActivity {
                     break;
         }
     }*/
-
-
-
-
-
 
 
     public void addListenerOnButton() {
@@ -115,111 +117,131 @@ public class Practice_Main extends AppCompatActivity {
                 statusRadio = true;
 
 
-                if(radioGroup1.getCheckedRadioButtonId()==-1){
+                if (radioGroup1.getCheckedRadioButtonId() == -1) {
                     System.out.println("RadioGroup1 : ไม่ได้ติก");
-                    statusRadio=false;
-                }else{
-                    if(radioGroup1Button.getText().equals("Thai")){
+                    statusRadio = false;
+                } else {
+                    if (radioGroup1Button.getText().equals("Thai")) {
                         score++;
                         //System.out.println("ถูกข้อ 1");
                     }
                 }
 
-                if(radioGroup2.getCheckedRadioButtonId()==-1){
+                if (radioGroup2.getCheckedRadioButtonId() == -1) {
                     System.out.println("RadioGroup2 : ไม่ได้ติก");
-                    statusRadio=false;
-                }else{
-                    if(radioGroup2Button.getText().equals("Japan")){
+                    statusRadio = false;
+                } else {
+                    if (radioGroup2Button.getText().equals("Japan")) {
                         score++;
                         //System.out.println("ถูกข้อ 2");
                     }
                 }
 
-                if(radioGroup3.getCheckedRadioButtonId()==-1){
+                if (radioGroup3.getCheckedRadioButtonId() == -1) {
                     System.out.println("RadioGroup3 : ไม่ได้ติก");
-                    statusRadio=false;
-                }else{
-                    if(radioGroup3Button.getText().equals("Morocco")){
+                    statusRadio = false;
+                } else {
+                    if (radioGroup3Button.getText().equals("Morocco")) {
                         score++;
                         //System.out.println("ถูกข้อ 3");
                     }
                 }
 
-                if(radioGroup4.getCheckedRadioButtonId()==-1){
+                if (radioGroup4.getCheckedRadioButtonId() == -1) {
                     System.out.println("RadioGroup4 : ไม่ได้ติก");
-                    statusRadio=false;
-                }else{
-                    if(radioGroup4Button.getText().equals("Sweden")){
+                    statusRadio = false;
+                } else {
+                    if (radioGroup4Button.getText().equals("Sweden")) {
                         score++;
                         //System.out.println("ถูกข้อ 4");
                     }
                 }
 
-                if(radioGroup5.getCheckedRadioButtonId()==-1){
+                if (radioGroup5.getCheckedRadioButtonId() == -1) {
                     System.out.println("RadioGroup5 : ไม่ได้ติก");
-                    statusRadio=false;
-                }else{
-                    if(radioGroup5Button.getText().equals("United Kingdom")){
+                    statusRadio = false;
+                } else {
+                    if (radioGroup5Button.getText().equals("United Kingdom")) {
                         score++;
                         //System.out.println("ถูกข้อ 5");
                     }
                 }
 
-                if(radioGroup6.getCheckedRadioButtonId()==-1){
+                if (radioGroup6.getCheckedRadioButtonId() == -1) {
                     System.out.println("RadioGroup6 : ไม่ได้ติก");
-                    statusRadio=false;
-                }else{
-                    if(radioGroup6Button.getText().equals("Singapore")){
+                    statusRadio = false;
+                } else {
+                    if (radioGroup6Button.getText().equals("Singapore")) {
                         score++;
                         //System.out.println("ถูกข้อ 6");
                     }
                 }
 
-                if(radioGroup7.getCheckedRadioButtonId()==-1){
+                if (radioGroup7.getCheckedRadioButtonId() == -1) {
                     System.out.println("RadioGroup7 : ไม่ได้ติก");
-                    statusRadio=false;
-                }else{
-                    if(radioGroup7Button.getText().equals("Switzerland")){
+                    statusRadio = false;
+                } else {
+                    if (radioGroup7Button.getText().equals("Switzerland")) {
                         score++;
                         //System.out.println("ถูกข้อ 7");
                     }
                 }
 
-                if(radioGroup8.getCheckedRadioButtonId()==-1){
+                if (radioGroup8.getCheckedRadioButtonId() == -1) {
                     System.out.println("RadioGroup8 : ไม่ได้ติก");
-                    statusRadio=false;
-                }else{
-                    if(radioGroup8Button.getText().equals("Saudi Arabia")){
+                    statusRadio = false;
+                } else {
+                    if (radioGroup8Button.getText().equals("Saudi Arabia")) {
                         score++;
                         //System.out.println("ถูกข้อ 8");
                     }
                 }
 
-                if(radioGroup9.getCheckedRadioButtonId()==-1){
+                if (radioGroup9.getCheckedRadioButtonId() == -1) {
                     System.out.println("RadioGroup9 : ไม่ได้ติก");
-                    statusRadio=false;
-                }else{
+                    statusRadio = false;
+                } else {
 
-                    if(radioGroup9Button.getText().equals("Russia")){
+                    if (radioGroup9Button.getText().equals("Russia")) {
                         score++;
                         //System.out.println("ถูกข้อ 9");
                     }
                 }
 
-                if(radioGroup10.getCheckedRadioButtonId()==-1){//ถ้าเป็น -1 คือยังไม่ได้เลือก
+                if (radioGroup10.getCheckedRadioButtonId() == -1) {//ถ้าเป็น -1 คือยังไม่ได้เลือก
                     System.out.println("RadioGroup10 : ไม่ได้ติก");
-                    statusRadio=false;
-                }else{
-                    if(radioGroup10Button.getText().equals("Taiwan")){
+                    statusRadio = false;
+                } else {
+                    if (radioGroup10Button.getText().equals("Taiwan")) {
                         score++;
                         //System.out.println("ถูกข้อ 10");
                     }
                 }
 
-                if(statusRadio){
+                if (statusRadio) {
+
+                    String currentDate = String.valueOf(android.text.format.DateFormat.format("yyyy-MM-dd hh:mm:ss a", new java.util.Date()));
+
+                    Calendar c = Calendar.getInstance();
+                    System.out.println("Current time => " + c.getTime());
+
+                    SimpleDateFormat df = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
+                    String formattedDate = df.format(c.getTime());
+
+
+//mydb.getUsername()
+                    try {//แก้ user และ format date ต่อด้วย
+                        mydb.insertScore("sss", formattedDate, score);
+                    } catch (ParseException pe) {
+
+                    }
+
+
                     Toast.makeText(Practice_Main.this,
-                            "You Score : "+score, Toast.LENGTH_SHORT).show();
+                            "You Score : " + score + "date : " + formattedDate
+                            , Toast.LENGTH_SHORT).show();
                 }
+
 
                 //ยังไม่ได้เช็ค คะแนน รอทำต่อ
             }

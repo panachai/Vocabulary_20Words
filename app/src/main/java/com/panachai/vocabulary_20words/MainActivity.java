@@ -4,13 +4,21 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-
+    DBHelper mydb;
+    EditText mainUser;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        mydb = new DBHelper(this);
+        mainUser = (EditText) findViewById(R.id.username);
+        System.out.println(mydb.getUsername());
+        //mainUser.setText("User : "+mydb.getUsername(), TextView.BufferType.EDITABLE);
     }
 
     public void THAI(View view){

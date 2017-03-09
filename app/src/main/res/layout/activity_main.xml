@@ -37,6 +37,14 @@
         android:layout_alignParentEnd="true"
         android:id="@+id/textView23" />
 
+    <TextView
+        android:id="@+id/mainUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="USERNAME"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
     <Button
         android:id="@+id/button_eng"
         android:layout_width="match_parent"

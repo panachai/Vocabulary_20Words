@@ -8,10 +8,13 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.widget.Toast;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 
 public class DBHelper extends SQLiteOpenHelper {
-    private String currentUserName;
+    private static String currentUserName ="dd";
 
     public static final String DB_Name = "MyContactDB";
     public static final String TB_Name = "profile";
@@ -50,6 +53,10 @@ public class DBHelper extends SQLiteOpenHelper {
         db.execSQL("drop table if exists " + TB_Name);
         db.execSQL("drop table if exists " + TB_Name2);
         onCreate(db);
+    }
+
+    public String getUsername(){
+        return currentUserName;
     }
 
     public void showUsername(String user){
@@ -124,7 +131,7 @@ public class DBHelper extends SQLiteOpenHelper {
     }
 */
 
-/*
+
     //Get All Record
     public ArrayList<String> getAllProfile(){
         //ประกาศ ArrayList สำหรับเก็บข้อมูลทุก record ที่จะคืนกลับ
@@ -141,20 +148,24 @@ public class DBHelper extends SQLiteOpenHelper {
         }
         return arrayList;
     }
-*/
+
     //-----------------------------------------------------------------------------//
 
     //Insert new Score
-    public boolean insertScore(String user, String testDate, Integer score) {
+    public boolean insertScore(String user, String testDate, Integer score) throws ParseException {
         //กำหนดให้สามารถเขียนข้อมูลลงในตารางข้อมูลได้
         //update delete insert ต้องใช้ getWritableDatabase
         SQLiteDatabase db = this.getWritableDatabase();
         //select ใช้ readable
 
+
+        //จัดการ date
+        Date current = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss").parse(testDate);
+
         //กำหนดค่าที่จะเพิ่มลงในตารางข้อมูล ด้วยคลาส ContentValues
         ContentValues contentValues = new ContentValues();
         contentValues.put(FLD_User2, user);
-        contentValues.put(FLD_Date, testDate);
+        contentValues.put(FLD_Date, String.valueOf(current)); //input date ไม่ได้เหรอ ?
         contentValues.put(FLD_Score, score);
         db.insert(TB_Name2, null, contentValues); //null คือใส่เงื่อนไขในการ insert
         return true;

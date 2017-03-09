@@ -8,7 +8,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.panachai.mycontactdemo.MainActivity">
+    tools:context="com.panachai.vocabulary_20words.testDatabaseMain">
 
     <TextView
         android:id="@+id/text1"
