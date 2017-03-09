@@ -36,9 +36,7 @@ public class RegisterActivity extends AppCompatActivity {
                         et_fullname.getText().toString(),
                         et_username.getText().toString()));
 
-
-
-                Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);
+                Intent intent = new Intent(RegisterActivity.this, LoginActivityUser.class);
                 startActivity(intent);
             }
         });

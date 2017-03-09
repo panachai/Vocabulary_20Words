@@ -41,21 +41,15 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
 
     private static final int REQUEST_READ_CONTACTS = 0;
 
-    /**
-     * A dummy authentication store containing known user names and passwords.
-     * TODO: remove after connecting to a real authentication system.
-     */
     private static final String[] DUMMY_CREDENTIALS = new String[]{
             "foo@example.com:hello", "bar@example.com:world"
     };
-    /**
-     * Keep track of the login task to ensure we can cancel it if requested.
-     */
+
     private UserLoginTask mAuthTask = null;
 
     // UI references.
     private AutoCompleteTextView mEmailView;
-    private EditText mPasswordView,musertest;
+    private EditText mPasswordView,musername;
     private View mProgressView;
     private View mLoginFormView;
 
@@ -67,7 +61,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         mEmailView = (AutoCompleteTextView) findViewById(R.id.email);
         populateAutoComplete();
 
-        musertest = (EditText) findViewById(R.id.usertest);
+        musername = (EditText) findViewById(R.id.username);
 
         mPasswordView = (EditText) findViewById(R.id.password);
         mPasswordView.setOnEditorActionListener(new TextView.OnEditorActionListener() {
@@ -174,7 +168,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         // Store values at the time of the login attempt.
         String email = mEmailView.getText().toString();
         String password = mPasswordView.getText().toString();
-        String usertest = musertest.getText().toString();
+        String username = musername.getText().toString();
 
         boolean cancel = false;
         View focusView = null;
@@ -205,22 +199,14 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             // Show a progress spinner, and kick off a background task to
             // perform the user login attempt.
 
-            Toast.makeText(LoginActivity.this,
-                    ""+mydb.checklogin(usertest)+" "+usertest, Toast.LENGTH_SHORT).show();
-
-            /*
-            if(mydb.checklogin(email)){
-
+            if(mydb.checklogin(username,"password")){
                     showProgress(true);
                     Intent intent = new Intent(this, MainActivity.class);
                     startActivity(intent);
-
             }else{
                 Toast.makeText(LoginActivity.this,
-                        "Email or Password not correct (Login Fail)", Toast.LENGTH_SHORT).show();
+                        "Email or Password not correct (Login Fail) : "+username+" : "+mydb.checklogin(username,"password"), Toast.LENGTH_SHORT).show();
             }
-*/
-
 
             /*
             mAuthTask = new UserLoginTask(email, password);

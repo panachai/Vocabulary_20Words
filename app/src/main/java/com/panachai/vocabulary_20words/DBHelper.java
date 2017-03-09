@@ -81,12 +81,12 @@ public class DBHelper extends SQLiteOpenHelper {
 
 
     //เวลา Select จะใช้ผ่าน cursor
-    public boolean checklogin(String email) {
+    public boolean checklogin(String username,String password) {
+
         //กำหนดให้อ่านข้อมูลจากตารางได้อย่างเดียว
         SQLiteDatabase db = this.getReadableDatabase();
         //Cursor rs = db.rawQuery("select * from " + TB_Name + " where " + FLD_Email + "= \'" + email+"\'", null); //null คือเงื่อนไข where (ในกรณีไม่ได้ hardcode)
-        Cursor rs = db.rawQuery("select * from " + TB_Name + " where " + FLD_User + "= \'" + email+"\'", null); //null คือเงื่อนไข where (ในกรณีไม่ได้ hardcode)
-
+        Cursor rs = db.rawQuery("select * from " + TB_Name + " where " + FLD_User + "= \'" + username+"\' and "+FLD_Pass+" = \'"+password+"\'", null); //null คือเงื่อนไข where (ในกรณีไม่ได้ hardcode)
 
         rs.moveToFirst();
         System.out.println("ขนาด : "+rs.getCount());
