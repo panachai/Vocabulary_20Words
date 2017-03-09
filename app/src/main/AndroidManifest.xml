@@ -13,7 +13,7 @@
         android:label="@string/app_name2"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
         <activity android:name=".thai_page" />
         <activity android:name=".eng_page" />
         <activity
@@ -39,7 +39,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".RegisterActivity"></activity>
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".testDatabase" />
+        <activity android:name=".testDatabaseMain"></activity>
     </application>
 
 </manifest>

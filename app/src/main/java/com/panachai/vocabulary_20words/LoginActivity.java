@@ -37,7 +37,7 @@ import java.util.List;
 import static android.Manifest.permission.READ_CONTACTS;
 
 public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<Cursor> {
-
+    DBHelper mydb;
 
     private static final int REQUEST_READ_CONTACTS = 0;
 
@@ -55,7 +55,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
 
     // UI references.
     private AutoCompleteTextView mEmailView;
-    private EditText mPasswordView;
+    private EditText mPasswordView,musertest;
     private View mProgressView;
     private View mLoginFormView;
 
@@ -66,6 +66,8 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         // Set up the login form.
         mEmailView = (AutoCompleteTextView) findViewById(R.id.email);
         populateAutoComplete();
+
+        musertest = (EditText) findViewById(R.id.usertest);
 
         mPasswordView = (EditText) findViewById(R.id.password);
         mPasswordView.setOnEditorActionListener(new TextView.OnEditorActionListener() {
@@ -92,6 +94,15 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button intentDB = (Button) findViewById(R.id.intentDB);
+        intentDB.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LoginActivity.this, testDatabaseMain.class);
                 startActivity(intent);
             }
         });
@@ -150,7 +161,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
      * errors are presented and no actual login attempt is made.
      */
     private void attemptLogin() {
-        DBHelper mydb = new DBHelper(this);
+        mydb = new DBHelper(this);
 
         if (mAuthTask != null) {
             return;
@@ -163,6 +174,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         // Store values at the time of the login attempt.
         String email = mEmailView.getText().toString();
         String password = mPasswordView.getText().toString();
+        String usertest = musertest.getText().toString();
 
         boolean cancel = false;
         View focusView = null;
@@ -194,7 +206,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             // perform the user login attempt.
 
             Toast.makeText(LoginActivity.this,
-                    "11111111111111"+mydb.checklogin(email), Toast.LENGTH_SHORT).show();
+                    ""+mydb.checklogin(usertest)+" "+usertest, Toast.LENGTH_SHORT).show();
 
             /*
             if(mydb.checklogin(email)){

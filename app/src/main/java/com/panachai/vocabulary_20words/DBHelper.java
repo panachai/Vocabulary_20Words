@@ -52,7 +52,7 @@ public class DBHelper extends SQLiteOpenHelper {
 
     //Data Manipulation
     //Insert new Profile
-    public boolean insertProfile(String user, String pass, String fullname, String email) {
+    public long insertProfile(String user, String pass, String fullname, String email) {
         //กำหนดให้สามารถเขียนข้อมูลลงในตารางข้อมูลได้
         //update delete insert ต้องใช้ getWritableDatabase
         SQLiteDatabase db = this.getWritableDatabase();
@@ -64,8 +64,9 @@ public class DBHelper extends SQLiteOpenHelper {
         contentValues.put(FLD_Pass, pass);
         contentValues.put(FLD_Fullname, fullname);
         contentValues.put(FLD_Email, email);
-        db.insert(TB_Name, null, contentValues); //null คือใส่เงื่อนไขในการ insert
-        return true;
+        long num = db.insert(TB_Name, null, contentValues);//null คือใส่เงื่อนไขในการ insert
+
+        return num;
     }
 
     //Query Data
@@ -77,20 +78,22 @@ public class DBHelper extends SQLiteOpenHelper {
         return rs;
     }
 
+
+
     //เวลา Select จะใช้ผ่าน cursor
     public boolean checklogin(String email) {
         //กำหนดให้อ่านข้อมูลจากตารางได้อย่างเดียว
         SQLiteDatabase db = this.getReadableDatabase();
-        Cursor rs = db.rawQuery("select * from " + TB_Name + " where " + FLD_Email + "=" + email, null); //null คือเงื่อนไข where (ในกรณีไม่ได้ hardcode)
+        //Cursor rs = db.rawQuery("select * from " + TB_Name + " where " + FLD_Email + "= \'" + email+"\'", null); //null คือเงื่อนไข where (ในกรณีไม่ได้ hardcode)
+        Cursor rs = db.rawQuery("select * from " + TB_Name + " where " + FLD_User + "= \'" + email+"\'", null); //null คือเงื่อนไข where (ในกรณีไม่ได้ hardcode)
 
 
         rs.moveToFirst();
-/*
+        System.out.println("ขนาด : "+rs.getCount());
         if(rs.getCount()>0){
             return true;
         }else return false;
-*/
-        return true;
+
     }
 
     //Uppdate Data

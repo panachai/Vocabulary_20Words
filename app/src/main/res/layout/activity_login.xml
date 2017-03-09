@@ -81,6 +81,27 @@
                 android:text="Register"
                 android:textStyle="bold" />
 
+            <Button
+                android:id="@+id/intentDB"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="TESTDATABASE"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/usertest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="USERTEST"
+                android:imeActionId="@+id/login"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeOptions="actionUnspecified"
+                android:inputType="text"
+                android:maxLines="1"
+                android:singleLine="true" />
+
         </LinearLayout>
     </ScrollView>
 </LinearLayout>
