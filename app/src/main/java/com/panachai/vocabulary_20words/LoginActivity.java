@@ -37,7 +37,7 @@ import java.util.List;
 import static android.Manifest.permission.READ_CONTACTS;
 
 public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<Cursor> {
-    DBHelper mydb;
+
 
     private static final int REQUEST_READ_CONTACTS = 0;
 
@@ -150,7 +150,8 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
      * errors are presented and no actual login attempt is made.
      */
     private void attemptLogin() {
-        mydb = new DBHelper(this);
+        DBHelper mydb = new DBHelper(this);
+
         if (mAuthTask != null) {
             return;
         }
@@ -192,16 +193,21 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             // Show a progress spinner, and kick off a background task to
             // perform the user login attempt.
 
+            Toast.makeText(LoginActivity.this,
+                    "11111111111111"+mydb.checklogin(email), Toast.LENGTH_SHORT).show();
 
-            if(1!=1){
-                showProgress(true);
-                Intent intent = new Intent(this, MainActivity.class);
-                startActivity(intent);
+            /*
+            if(mydb.checklogin(email)){
+
+                    showProgress(true);
+                    Intent intent = new Intent(this, MainActivity.class);
+                    startActivity(intent);
+
             }else{
                 Toast.makeText(LoginActivity.this,
                         "Email or Password not correct (Login Fail)", Toast.LENGTH_SHORT).show();
             }
-
+*/
 
 
             /*
