@@ -11,6 +11,8 @@ import android.widget.Toast;
 import java.util.ArrayList;
 
 public class DBHelper extends SQLiteOpenHelper {
+    private String currentUserName;
+
     public static final String DB_Name = "MyContactDB";
     public static final String TB_Name = "profile";
     public static final String FLD_ID = "id";
@@ -48,6 +50,10 @@ public class DBHelper extends SQLiteOpenHelper {
         db.execSQL("drop table if exists " + TB_Name);
         db.execSQL("drop table if exists " + TB_Name2);
         onCreate(db);
+    }
+
+    public void showUsername(String user){
+        currentUserName = user;
     }
 
     //Data Manipulation
