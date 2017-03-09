@@ -83,6 +83,7 @@ public class DBHelper extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor rs = db.rawQuery("select * from " + TB_Name + " where " + FLD_Email + "=" + email, null); //null คือเงื่อนไข where (ในกรณีไม่ได้ hardcode)
 
+
         rs.moveToFirst();
 /*
         if(rs.getCount()>0){
