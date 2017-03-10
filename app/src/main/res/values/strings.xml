@@ -57,5 +57,12 @@
         completions."
     </string>
 
+    <!-- Register -->
+    <string name="register">REGISTER</string>
+    <string name="userHint">Username 4-12 digit</string>
+    <string name="passHint">Password 4-12 digit</string>
+    <string name="repassHint">Re-Password</string>
+    <string name="fullnameHint">Fullname 5-30 digit</string>
+    <string name="emailHint">Email Address</string>
 
 </resources>

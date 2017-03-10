@@ -10,28 +10,31 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.panachai.vocabulary_20words.testDatabaseMain">
 
-    <TextView
-        android:id="@+id/text1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Contacts on SQLite"
-        android:textSize="20sp"
-        android:textStyle="bold" />
-
-    <ScrollView
-        android:id="@+id/scrollView"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_below="@id/text1">
+        android:orientation="vertical">
 
-        <ListView
-            android:id="@+id/listView1"
+        <TextView
+            android:id="@+id/text1"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:text="Contacts on SQLite"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
-        </ListView>
-    </ScrollView>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:id="@+id/listView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </ListView>
+        </FrameLayout>
+
+    </LinearLayout>
 
 </RelativeLayout>

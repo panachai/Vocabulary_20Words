@@ -29,7 +29,7 @@
                         android:id="@+id/textView24"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="REGISTER"
+                        android:text="@string/register"
                         android:textAlignment="center"
                         android:textSize="36sp"
                         android:textStyle="bold" />
@@ -44,7 +44,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:ems="10"
-                        android:hint="UserName"
+                        android:hint="@string/userHint"
                         android:inputType="text" />
                 </TableRow>
 
@@ -57,7 +57,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:ems="10"
-                        android:hint="Password"
+                        android:hint="@string/passHint"
                         android:inputType="textPassword" />
 
                 </TableRow>
@@ -71,7 +71,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:ems="10"
-                        android:hint="Re-Password"
+                        android:hint="@string/repassHint"
                         android:inputType="textPassword" />
                 </TableRow>
 
@@ -84,7 +84,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:ems="10"
-                        android:hint="FullName"
+                        android:hint="@string/fullnameHint"
                         android:inputType="text" />
                 </TableRow>
 
@@ -101,7 +101,7 @@
                             android:layout_width="366dp"
                             android:layout_height="wrap_content"
                             android:ems="10"
-                            android:hint="Email"
+                            android:hint="@string/emailHint"
                             android:inputType="textEmailAddress" />
 
                     </android.support.design.widget.TextInputLayout>
@@ -115,14 +115,9 @@
                         android:id="@+id/bt_complete"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Register" />
+                        android:text="@string/register" />
                 </TableRow>
 
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                </TableRow>
             </TableLayout>
 
         </LinearLayout>

@@ -29,7 +29,7 @@ public class testDatabase extends AppCompatActivity {
 
             rs.moveToFirst();
             //อ่านค่าแต่ละคอลัมน์
-            String name = rs.getString(rs.getColumnIndex(DBHelper.FLD_User));
+            String name = rs.getString(rs.getColumnIndex(DBHelper.FLD_Fullname));
             String email = rs.getString(rs.getColumnIndex(DBHelper.FLD_Pass));
             String phone = rs.getString(rs.getColumnIndex(DBHelper.FLD_Email));
 

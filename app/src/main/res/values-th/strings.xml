@@ -28,4 +28,25 @@
     <string name="complete">เสร็จ</string>
 
 
+    <string name="tvQ1">1. เลือกธงประเทศในภาพด้านบน </string>
+    <string name="tvQ2">2. เลือกธงประเทศในภาพด้านบน </string>
+    <string name="tvQ3">3. เลือกธงประเทศในภาพด้านบน </string>
+    <string name="tvQ4">4. เลือกธงประเทศในภาพด้านบน </string>
+    <string name="tvQ5">5. เลือกธงประเทศในภาพด้านบน </string>
+    <string name="tvQ6">6. เลือกธงประเทศในภาพด้านบน </string>
+    <string name="tvQ7">7. เลือกธงประเทศในภาพด้านบน </string>
+    <string name="tvQ8">8. เลือกธงประเทศในภาพด้านบน </string>
+    <string name="tvQ9">9. เลือกธงประเทศในภาพด้านบน </string>
+    <string name="tvQ10">10. เลือกธงประเทศในภาพด้านบน </string>
+
+
+    <!-- Register -->
+    <string name="register">สมัครสมาชิก</string>
+    <string name="userHint">ชื่อผู้ใช้ 4-12 ตัวอักษร</string>
+    <string name="passHint">รหัสผ่าน 4-12 ตัวอักษร</string>
+    <string name="repassHint">ใส่รหัสผ่านอีกครั้ง</string>
+    <string name="fullnameHint">ชื่อเต็ม 5-30 ตัวอักษร</string>
+    <string name="emailHint">ที่อยู่อีเมล</string>
+
+
 </resources>

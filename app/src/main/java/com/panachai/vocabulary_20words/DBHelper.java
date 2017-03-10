@@ -98,7 +98,28 @@ public class DBHelper extends SQLiteOpenHelper {
         return rs;
     }
 
+    public String checkUser(String username,String email) {
 
+        SQLiteDatabase db = this.getReadableDatabase();
+        //checkUser
+        Cursor rs = db.rawQuery("select * from " + TB_Name + " where " + FLD_User + "= \'" + username+"\'", null);
+        rs.moveToFirst();
+        System.out.println("ขนาด : "+rs.getCount());
+
+        //checkPassword
+        Cursor rspass = db.rawQuery("select * from " + TB_Name + " where " + FLD_Email + "= \'" + email+"\'", null);
+        rspass.moveToFirst();
+        System.out.println("ขนาด : "+rspass.getCount());
+
+        if(rs.getCount()>0){
+            return "user0";
+        }
+
+        if(rspass.getCount()>0){
+            return "email0";
+        }else return "pass";
+
+    }
 
     //เวลา Select จะใช้ผ่าน cursor
     public boolean checklogin(String username,String password) {
