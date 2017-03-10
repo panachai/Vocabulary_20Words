@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import java.util.Date;
 
 public class DBHelper extends SQLiteOpenHelper {
-    private static String currentUserName ="dd";
+    private static String currentUserName ;
 
     public static final String DB_Name = "MyContactDB";
     public static final String TB_Name = "profile";
