@@ -76,5 +76,15 @@
         android:layout_above="@+id/textView23"
         android:layout_alignParentEnd="true" />
 
+    <Button
+        android:onClick="HISTORYSCORE"
+
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/bt_profile"
+        android:layout_toStartOf="@+id/bt_profile"
+        android:text="SCORE" />
+
 
 </RelativeLayout>

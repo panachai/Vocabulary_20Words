@@ -32,7 +32,7 @@
         <activity android:name=".Practice_Main" />
         <activity
             android:name=".LoginActivity"
-            android:label="@string/title_activity_login"></activity>
+            android:label="@string/title_activity_login" />
         <activity android:name=".RegisterActivity" />
         <activity android:name=".testDatabase" />
         <activity android:name=".testDatabaseMain" />
@@ -43,7 +43,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".EditProfileActivity"></activity>
+        <activity android:name=".EditProfileActivity" />
+        <activity android:name=".HistoryScoreActivity"></activity>
     </application>
 
 </manifest>

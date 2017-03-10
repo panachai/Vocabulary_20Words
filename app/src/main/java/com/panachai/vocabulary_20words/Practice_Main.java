@@ -48,7 +48,7 @@ public class Practice_Main extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_practice__main);
 
-
+        mydb = new DBHelper(this);
         addListenerOnButton();
     }
 
@@ -230,17 +230,18 @@ public class Practice_Main extends AppCompatActivity {
 
 //mydb.getUsername()
                     try {//แก้ user และ format date ต่อด้วย
-                        mydb.insertScore("sss", formattedDate, score);
+                        mydb.insertScore(mydb.getUsername(), formattedDate, score);
                     } catch (ParseException pe) {
 
                     }
 
-
                     Toast.makeText(Practice_Main.this,
-                            "You Score : " + score + "date : " + formattedDate
+                            "You Score : " + score + " date : " + formattedDate
                             , Toast.LENGTH_SHORT).show();
-                }
 
+                    Intent intent = new Intent(Practice_Main.this, MainActivity.class);
+                    startActivity(intent);
+                }
 
                 //ยังไม่ได้เช็ค คะแนน รอทำต่อ
             }

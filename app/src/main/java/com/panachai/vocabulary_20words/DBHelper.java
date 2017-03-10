@@ -44,7 +44,7 @@ public class DBHelper extends SQLiteOpenHelper {
 
         db.execSQL("create table " + TB_Name2 + " (" + FLD_ID2 +
                 " integer primary key, " + FLD_User2 + " text," +
-                FLD_Date + " date," + FLD_Score + " integer)"); //.execSQL ไว้ใช้รัน SQLite ไม่จำเป็นต้องประกาศ size
+                FLD_Date + " text," + FLD_Score + " integer)"); //.execSQL ไว้ใช้รัน SQLite ไม่จำเป็นต้องประกาศ size
     }
 
     @Override
@@ -159,7 +159,7 @@ public class DBHelper extends SQLiteOpenHelper {
     //-----------------------------------------------------------------------------//
 
     //Insert new Score
-    public boolean insertScore(String user, String testDate, Integer score) throws ParseException {
+    public boolean insertScore(String user, String formattedDate, Integer score) throws ParseException {
         //กำหนดให้สามารถเขียนข้อมูลลงในตารางข้อมูลได้
         //update delete insert ต้องใช้ getWritableDatabase
         SQLiteDatabase db = this.getWritableDatabase();
@@ -167,12 +167,12 @@ public class DBHelper extends SQLiteOpenHelper {
 
 
         //จัดการ date
-        Date current = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss").parse(testDate);
+        //String current = String.valueOf(new SimpleDateFormat("dd-MM-yyyy HH:mm:ss").parse(testDate));
 
         //กำหนดค่าที่จะเพิ่มลงในตารางข้อมูล ด้วยคลาส ContentValues
         ContentValues contentValues = new ContentValues();
         contentValues.put(FLD_User2, user);
-        contentValues.put(FLD_Date, String.valueOf(current)); //input date ไม่ได้เหรอ ?
+        contentValues.put(FLD_Date, formattedDate); //input date ไม่ได้เหรอ ?
         contentValues.put(FLD_Score, score);
         db.insert(TB_Name2, null, contentValues); //null คือใส่เงื่อนไขในการ insert
         return true;
@@ -180,10 +180,10 @@ public class DBHelper extends SQLiteOpenHelper {
 
     //Query Data
     //เวลา Select จะใช้ผ่าน cursor
-    public Cursor getScore(int id) {
+    public Cursor getScore(String user) {
         //กำหนดให้อ่านข้อมูลจากตารางได้อย่างเดียว
         SQLiteDatabase db = this.getReadableDatabase();
-        Cursor rs = db.rawQuery("select * from " + TB_Name2 + " where " + FLD_ID2 + "=" + id, null); //null คือเงื่อนไข where (ในกรณีไม่ได้ hardcode)
+        Cursor rs = db.rawQuery("select * from " + TB_Name2 + " where " + FLD_User2 + "= '" + user+"'", null); //null คือเงื่อนไข where (ในกรณีไม่ได้ hardcode)
         return rs;
     }
 
@@ -196,7 +196,7 @@ public class DBHelper extends SQLiteOpenHelper {
     }
 */
 
-/*
+
 
     //Get All Record
     public ArrayList<String> getAllScore(){
@@ -209,13 +209,12 @@ public class DBHelper extends SQLiteOpenHelper {
         //อ่านข้อมูลจนกว่าจะครบทุก record
         while(rs.isAfterLast() == false){ //.isAfterLast() cursor เลย end of file แล้วหรือยัง
             //เพิ่มข้อมูลแต่ละ record ลงใน arraylist
-            arrayList.add(rs.getString(rs.getColumnIndex(FLD_User2)));
-            arrayList.add(rs.getString(rs.getColumnIndex(FLD_Score)));
+            arrayList.add(rs.getString(rs.getColumnIndex(FLD_Score))+" "+rs.getString(rs.getColumnIndex(FLD_Date)));
             rs.moveToNext();
         }
         return arrayList;
     }
-*/
+
 
 
 }
