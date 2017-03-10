@@ -19,11 +19,15 @@ public class testDatabaseMain extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test_database_main);
 
+        mydb = new DBHelper(this);
+        lvContact = (ListView) findViewById(R.id.listView1);
+
         ArrayList arrayList = mydb.getAllProfile();
         ArrayAdapter arrayAdapter = new
                 ArrayAdapter(this,
                 android.R.layout.simple_list_item_1,arrayList);
         lvContact.setAdapter(arrayAdapter);
+
 
         //เป็นการเขียน Event OnClick อีกแบบนึง
         //ใส่ Event เมื่อผู้ใช้เลือกรายชื่อผู้ติดต่อใน listview

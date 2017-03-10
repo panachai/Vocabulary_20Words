@@ -228,7 +228,6 @@ public class Practice_Main extends AppCompatActivity {
                     SimpleDateFormat df = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
                     String formattedDate = df.format(c.getTime());
 
-
 //mydb.getUsername()
                     try {//แก้ user และ format date ต่อด้วย
                         mydb.insertScore("sss", formattedDate, score);

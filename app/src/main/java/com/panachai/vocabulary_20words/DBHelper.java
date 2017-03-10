@@ -63,6 +63,13 @@ public class DBHelper extends SQLiteOpenHelper {
         currentUserName = user;
     }
 
+    public Cursor getProfile(String user) {
+        //กำหนดให้อ่านข้อมูลจากตารางได้อย่างเดียว
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor rs = db.rawQuery("select * from " + TB_Name + " where " + FLD_User + "= '" + user+"'", null); //null คือเงื่อนไข where (ในกรณีไม่ได้ hardcode)
+        return rs;
+    }
+
     //Data Manipulation
     //Insert new Profile
     public long insertProfile(String user, String pass, String fullname, String email) {
@@ -83,8 +90,8 @@ public class DBHelper extends SQLiteOpenHelper {
     }
 
     //Query Data
-    //เวลา Select จะใช้ผ่าน cursor
-    public Cursor getProfile(int id) {
+    //เวลา Select จะใช้ผ่าน cursor (เอาไว้ใช้เทส Database)
+    public Cursor getProfileTest(int id) {
         //กำหนดให้อ่านข้อมูลจากตารางได้อย่างเดียว
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor rs = db.rawQuery("select * from " + TB_Name + " where " + FLD_ID + "=" + id, null); //null คือเงื่อนไข where (ในกรณีไม่ได้ hardcode)
@@ -110,7 +117,7 @@ public class DBHelper extends SQLiteOpenHelper {
     }
 
     //Uppdate Data
-    public boolean updateProfile(int id, String pass, String fullname, String email) { //ไม่มีชื่อ เพราะเราไม่ต้องการให้เปลี่ยน primary key
+    public boolean updateProfile(String user, String pass, String fullname, String email) { //ไม่มีชื่อ เพราะเราไม่ต้องการให้เปลี่ยน primary key
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
         //ไว้เขียน empty ด้วย
@@ -118,7 +125,7 @@ public class DBHelper extends SQLiteOpenHelper {
         contentValues.put(FLD_Fullname, fullname);
         contentValues.put(FLD_Email, email);
         //Syntax update : table name , ค่าที่ต้องการแก้ , where ฟิลไหน , ค่าที่ต้องการ where
-        db.update(TB_Name, contentValues, FLD_ID + "=?", new String[]{Integer.toString(id)});
+        db.update(TB_Name, contentValues, FLD_User + "=?", new String[]{user});
         return true;
     }
 

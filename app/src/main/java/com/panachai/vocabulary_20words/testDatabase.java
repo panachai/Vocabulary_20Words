@@ -25,7 +25,7 @@ public class testDatabase extends AppCompatActivity {
             //อ่านค่าที่ส่งมา
             int value = bundle.getInt("id"); //ส่งเป็น int เลย get int
             //อ่านค่าจาก SQLite โดยค้นหาตาม id ของ contact
-            Cursor rs = mydb.getProfile(value);
+            Cursor rs = mydb.getProfileTest(value);
 
             rs.moveToFirst();
             //อ่านค่าแต่ละคอลัมน์
