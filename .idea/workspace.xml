@@ -12,10 +12,6 @@
   <component name="ChangeListManager">
     <list default="true" id="01ec34a6-2c38-4756-8c6c-b99e57b8529b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/panachai/vocabulary_20words/LoginActivityUser.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/panachai/vocabulary_20words/LoginActivityUser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/panachai/vocabulary_20words/RegisterActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/panachai/vocabulary_20words/RegisterActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
     </list>
     <ignored path="Vocabulary_20Words.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -2347,7 +2343,14 @@
       <option name="project" value="LOCAL" />
       <updated>1489163359806</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="debug 2">
+      <created>1489595480868</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1489595480868</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2446,7 +2449,8 @@
     <MESSAGE value="Edit complete&#10;testDB complete&#10;wait do insert date" />
     <MESSAGE value="insert complete&#10;score complete&#10;getscore complete" />
     <MESSAGE value="debug Register complete" />
-    <option name="LAST_COMMIT_MESSAGE" value="debug Register complete" />
+    <MESSAGE value="debug 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="debug 2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
