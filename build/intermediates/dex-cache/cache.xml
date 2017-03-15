@@ -3,102 +3,84 @@
 
     <item
         is-multidex="true"
-        jar="C:\Users\KILLERCON\.android\build-cache\79b8e0a4ac2059cc4b505178f19541c19c06c7cf\output\jars\classes.jar"
+        jar="C:\Users\KILLERCON\.android\build-cache\7f3cad98d708f48b6927806e3d233a363defd3a6\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="0fb891e8f0cfba0513043a7bb357513d229ca2cd">
-        <dex dex="B:\AndroidStudioProject\Vocabulary_20Words\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_68fe157e513020801723e0bbdd62a13bf7d13b3e\classes.dex" />
+        sha1="15b049fedbd8e3926bf99d9e45dfc9b2a1043bb9">
+        <dex dex="B:\AndroidStudioProject\Vocabulary_20Words\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_83acced7621b690aebdffac7f77c40595ffa7fef\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\KILLERCON\.android\build-cache\35a2f6ee97f89202c7314fd7bd04443621544849\output\jars\classes.jar"
+        jar="C:\Users\KILLERCON\.android\build-cache\489d4b34bb339f127eac6c8a82bddc35b0c6ba20\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="B:\AndroidStudioProject\Vocabulary_20Words\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_9da09f79e81d6b96db0e6882d90c615e6115597d\classes.dex" />
+        sha1="02741d05d4b697fba5e279e9881aaa1da0ca7c7f">
+        <dex dex="B:\AndroidStudioProject\Vocabulary_20Words\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_5f0af2624f796f210e2de333e441f36855691a93\classes.dex" />
     </item>
     <item
-        is-multidex="true"
+        is-multidex="false"
         jar="C:\Users\KILLERCON\.android\build-cache\df7bbc5cf4fa94b2510991e46e038d4a41643173\output\jars\classes.jar"
-        jumboMode="true"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
         sha1="cd7951e04cfb9a8bf008d544a478d9a8d8192d38">
-        <dex dex="B:\AndroidStudioProject\Vocabulary_20Words\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_b057c407e5665f7af6a50048a55234d28ee0b207\classes.dex" />
+        <dex dex="B:\AndroidStudioProject\Vocabulary_20Words\app\build\intermediates\pre-dexed\debug\classes_b057c407e5665f7af6a50048a55234d28ee0b207.jar" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\KILLERCON\AppData\Local\Android\sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.1\constraint-layout-solver-1.0.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="1ad79631209e77b0a2730fc112b4cc0c66a95132">
-        <dex dex="B:\AndroidStudioProject\Vocabulary_20Words\app\build\intermediates\transforms\dex\debug\folders\1000\10\constraint-layout-solver-1.0.1_b48588e8ab768d93e00ae155bc7906a4e9310487\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\KILLERCON\.android\build-cache\2436ddc44aa5b32520b819daf0a4581f46c417b9\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="e2719c102dca3a7a5b02ce07f769362da6ddb4ab">
-        <dex dex="B:\AndroidStudioProject\Vocabulary_20Words\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_5a0ef7407840b441df459018b72084d0786fe931\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\KILLERCON\.android\build-cache\947564fec46504fb658c8605b1dcdc073888b34b\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="7113302c965566b66df46c6ca75ea301576114a5">
-        <dex dex="B:\AndroidStudioProject\Vocabulary_20Words\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_e41e9fcdb2345fa7a73c72cdb392852466991f0a\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\KILLERCON\.android\build-cache\eb0cd2119ec21eea717ab6eaee772edfed6f94a8\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="ecb496cc08dd52551fc5ec6db3bc0632e95a89bb">
-        <dex dex="B:\AndroidStudioProject\Vocabulary_20Words\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_1e01266d1b507bef05346c045362bc7b286e33e3\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\KILLERCON\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.1.1\support-annotations-25.1.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="b59b6ee8d6ecc03e672d253800430343493a6ed8">
-        <dex dex="B:\AndroidStudioProject\Vocabulary_20Words\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.1.1_d84f1a58ae202eeddf2bdbcd624728ce95e51f15\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\KILLERCON\.android\build-cache\365e5835aaeb44a49efd896775dd5329352d6803\output\jars\classes.jar"
+        jar="C:\Users\KILLERCON\.android\build-cache\449a6fc7eb005dfa3a70c6f7f713c16d82aacf0c\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="c9649557905bf7a80fca9e0d54cbcb7662627860">
-        <dex dex="B:\AndroidStudioProject\Vocabulary_20Words\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_adba14aecbafdae3d22e6d117ba1d133ccf0ab81\classes.dex" />
+        <dex dex="B:\AndroidStudioProject\Vocabulary_20Words\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_902045392fe48c49af820896e91a60220de2d8de\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\KILLERCON\.android\build-cache\1cb55b7963ebb260e21921c57aeed9f5ee75e342\output\jars\classes.jar"
+        jar="C:\Users\KILLERCON\.android\build-cache\3629e8ce56e6c0e5c83a1ca4adf46c8ffd54eaea\output\jars\classes.jar"
         jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3e04ac8ca644ea7baddf6fdcf72e15c79e9df94a">
+        <dex dex="B:\AndroidStudioProject\Vocabulary_20Words\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_a51864b8c74b760e3c7fff92aa0356f7ac0bb5d1\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\KILLERCON\AppData\Local\Android\sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.1\constraint-layout-solver-1.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1ad79631209e77b0a2730fc112b4cc0c66a95132">
+        <dex dex="B:\AndroidStudioProject\Vocabulary_20Words\app\build\intermediates\pre-dexed\debug\constraint-layout-solver-1.0.1_b48588e8ab768d93e00ae155bc7906a4e9310487.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\KILLERCON\.android\build-cache\07fedf08d87fab99c525538ea7a9a7b6e3ef685e\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="15b049fedbd8e3926bf99d9e45dfc9b2a1043bb9">
+        <dex dex="B:\AndroidStudioProject\Vocabulary_20Words\app\build\intermediates\pre-dexed\debug\classes_0a55146e7bf2dbad2d9b57edb873f5a93bb53b34.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\KILLERCON\.android\build-cache\83a92828e937db2db165bda99d9e13f256145897\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0fb891e8f0cfba0513043a7bb357513d229ca2cd">
+        <dex dex="B:\AndroidStudioProject\Vocabulary_20Words\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_ce30ad7b6ffac3bd4d600f1d1bb2a2184caba095\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\KILLERCON\.android\build-cache\1cb55b7963ebb260e21921c57aeed9f5ee75e342\output\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
         sha1="7bde4c34162092e0a77e7f12dc85ed77c484cf5c">
-        <dex dex="B:\AndroidStudioProject\Vocabulary_20Words\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_0b1e5f46095514d09fb408382612565d73894dea\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\KILLERCON\.android\build-cache\de5589655e31c70619fa6878a7595adaca9485de\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="0d191c1a09e4892d059e5ce749e4ad4e08129e35">
-        <dex dex="B:\AndroidStudioProject\Vocabulary_20Words\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_cf65a7de259b462559daf1c2b7cfdc5455fc6a2e\classes.dex" />
+        <dex dex="B:\AndroidStudioProject\Vocabulary_20Words\app\build\intermediates\pre-dexed\debug\classes_0b1e5f46095514d09fb408382612565d73894dea.jar" />
     </item>
     <item
         is-multidex="true"
@@ -110,13 +92,13 @@
         <dex dex="B:\AndroidStudioProject\Vocabulary_20Words\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_41506b31bd776ce1c8eaa18d86be461eee5446ee\classes.dex" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Users\KILLERCON\.android\build-cache\07fedf08d87fab99c525538ea7a9a7b6e3ef685e\output\jars\classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\KILLERCON\.android\build-cache\e290ff0cdf72fba3704c549432ce8c9118ec097d\output\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="15b049fedbd8e3926bf99d9e45dfc9b2a1043bb9">
-        <dex dex="B:\AndroidStudioProject\Vocabulary_20Words\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_0a55146e7bf2dbad2d9b57edb873f5a93bb53b34\classes.dex" />
+        sha1="3e04ac8ca644ea7baddf6fdcf72e15c79e9df94a">
+        <dex dex="B:\AndroidStudioProject\Vocabulary_20Words\app\build\intermediates\pre-dexed\debug\classes_4cda910131b282562da09d1ea9624f2ea461d9f7.jar" />
     </item>
     <item
         is-multidex="true"
@@ -129,30 +111,156 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\KILLERCON\.android\build-cache\e290ff0cdf72fba3704c549432ce8c9118ec097d\output\jars\classes.jar"
+        jar="C:\Users\KILLERCON\.android\build-cache\752b7fef8382361cde498775d57bb840ed93f401\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="3e04ac8ca644ea7baddf6fdcf72e15c79e9df94a">
-        <dex dex="B:\AndroidStudioProject\Vocabulary_20Words\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_4cda910131b282562da09d1ea9624f2ea461d9f7\classes.dex" />
+        sha1="0d191c1a09e4892d059e5ce749e4ad4e08129e35">
+        <dex dex="B:\AndroidStudioProject\Vocabulary_20Words\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_1555a9fa065a42ad18d7feab40cbed96bf7ec295\classes.dex" />
     </item>
     <item
         is-multidex="true"
+        jar="C:\Users\KILLERCON\.android\build-cache\6e43a08a836aa6eff323606cb376556e145a32a2\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7bde4c34162092e0a77e7f12dc85ed77c484cf5c">
+        <dex dex="B:\AndroidStudioProject\Vocabulary_20Words\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_01bc648f85baf0a1561e13eab1eed5b67ee69326\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\KILLERCON\.android\build-cache\365e5835aaeb44a49efd896775dd5329352d6803\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c9649557905bf7a80fca9e0d54cbcb7662627860">
+        <dex dex="B:\AndroidStudioProject\Vocabulary_20Words\app\build\intermediates\pre-dexed\debug\classes_adba14aecbafdae3d22e6d117ba1d133ccf0ab81.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="C:\Users\KILLERCON\.android\build-cache\d446e1cc8f5e9d21da9edcec4e0359c87eade1c1\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c03bf57f358aa10d253f21989e93bcf6014b3b17">
+        <dex dex="B:\AndroidStudioProject\Vocabulary_20Words\app\build\intermediates\pre-dexed\debug\classes_fb0e724391f12c3d22984f048c9557d061a6d94a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\KILLERCON\.android\build-cache\947564fec46504fb658c8605b1dcdc073888b34b\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7113302c965566b66df46c6ca75ea301576114a5">
+        <dex dex="B:\AndroidStudioProject\Vocabulary_20Words\app\build\intermediates\pre-dexed\debug\classes_e41e9fcdb2345fa7a73c72cdb392852466991f0a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\KILLERCON\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.1.1\support-annotations-25.1.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b59b6ee8d6ecc03e672d253800430343493a6ed8">
+        <dex dex="B:\AndroidStudioProject\Vocabulary_20Words\app\build\intermediates\pre-dexed\debug\support-annotations-25.1.1_d84f1a58ae202eeddf2bdbcd624728ce95e51f15.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\KILLERCON\.android\build-cache\fae5acdf78d267318c6dca3a9dd0ca2945bf42bc\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ecb496cc08dd52551fc5ec6db3bc0632e95a89bb">
+        <dex dex="B:\AndroidStudioProject\Vocabulary_20Words\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_412be7e3db3e612df57514d3c3b709863e852507\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\KILLERCON\.android\build-cache\35a2f6ee97f89202c7314fd7bd04443621544849\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="B:\AndroidStudioProject\Vocabulary_20Words\app\build\intermediates\pre-dexed\debug\classes_9da09f79e81d6b96db0e6882d90c615e6115597d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\KILLERCON\.android\build-cache\2436ddc44aa5b32520b819daf0a4581f46c417b9\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e2719c102dca3a7a5b02ce07f769362da6ddb4ab">
+        <dex dex="B:\AndroidStudioProject\Vocabulary_20Words\app\build\intermediates\pre-dexed\debug\classes_5a0ef7407840b441df459018b72084d0786fe931.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\KILLERCON\.android\build-cache\0a5bec70194c745b9a0397489e8114c4c7a6fa08\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="B:\AndroidStudioProject\Vocabulary_20Words\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_cebf97acd425196c24b181db658a61fa81796e20\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\KILLERCON\.android\build-cache\745ed0b3a25af07351b23ac728d4f0d1ef1fe7d2\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="02741d05d4b697fba5e279e9881aaa1da0ca7c7f">
+        <dex dex="B:\AndroidStudioProject\Vocabulary_20Words\app\build\intermediates\pre-dexed\debug\classes_b1a70409561db8d4f0591f475130edb5a8ae63da.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\KILLERCON\.android\build-cache\de5589655e31c70619fa6878a7595adaca9485de\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0d191c1a09e4892d059e5ce749e4ad4e08129e35">
+        <dex dex="B:\AndroidStudioProject\Vocabulary_20Words\app\build\intermediates\pre-dexed\debug\classes_cf65a7de259b462559daf1c2b7cfdc5455fc6a2e.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\KILLERCON\.android\build-cache\42ea2facc20b5fb102266160958e094bda6e91f0\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="cd7951e04cfb9a8bf008d544a478d9a8d8192d38">
+        <dex dex="B:\AndroidStudioProject\Vocabulary_20Words\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_075f4305c47a2fea7cbf2317f2e4612f311f67b5\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\KILLERCON\.android\build-cache\eb0cd2119ec21eea717ab6eaee772edfed6f94a8\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ecb496cc08dd52551fc5ec6db3bc0632e95a89bb">
+        <dex dex="B:\AndroidStudioProject\Vocabulary_20Words\app\build\intermediates\pre-dexed\debug\classes_1e01266d1b507bef05346c045362bc7b286e33e3.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\KILLERCON\.android\build-cache\6e563a8f843c3d30cb3f0a9afbaf538a5833bab4\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="c03bf57f358aa10d253f21989e93bcf6014b3b17">
-        <dex dex="B:\AndroidStudioProject\Vocabulary_20Words\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_fb0e724391f12c3d22984f048c9557d061a6d94a\classes.dex" />
+        <dex dex="B:\AndroidStudioProject\Vocabulary_20Words\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_eed8d70e518b81d827e283756d271abd8b68f047\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\KILLERCON\.android\build-cache\79b8e0a4ac2059cc4b505178f19541c19c06c7cf\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0fb891e8f0cfba0513043a7bb357513d229ca2cd">
+        <dex dex="B:\AndroidStudioProject\Vocabulary_20Words\app\build\intermediates\pre-dexed\debug\classes_68fe157e513020801723e0bbdd62a13bf7d13b3e.jar" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\KILLERCON\.android\build-cache\745ed0b3a25af07351b23ac728d4f0d1ef1fe7d2\output\jars\classes.jar"
+        jar="C:\Users\KILLERCON\.android\build-cache\c72c4a69b8fde5f2f5ebd10aec5d9bfb59f531be\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="02741d05d4b697fba5e279e9881aaa1da0ca7c7f">
-        <dex dex="B:\AndroidStudioProject\Vocabulary_20Words\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_b1a70409561db8d4f0591f475130edb5a8ae63da\classes.dex" />
+        sha1="e2719c102dca3a7a5b02ce07f769362da6ddb4ab">
+        <dex dex="B:\AndroidStudioProject\Vocabulary_20Words\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_f19187c25b1cf81d6c7bec13bd77b9f22283ec44\classes.dex" />
     </item>
 
 </items>

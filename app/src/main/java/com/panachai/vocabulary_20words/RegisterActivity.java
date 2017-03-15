@@ -110,10 +110,10 @@ public class RegisterActivity extends AppCompatActivity {
             if (result > 0) {
                 Toast.makeText(RegisterActivity.this,
                         "Register Success", Toast.LENGTH_SHORT).show();
-/*
+
                 Intent intent = new Intent(RegisterActivity.this, LoginActivityUser.class);
                 startActivity(intent);
-*/
+
             } else {
                 Toast.makeText(RegisterActivity.this,
                         "SQL error (Register Fail)", Toast.LENGTH_SHORT).show();

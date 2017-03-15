@@ -53,15 +53,23 @@ public class LoginActivityUser extends AppCompatActivity {
         String Username = mUsername.getText().toString();
         String Password = mPassword.getText().toString();
 
-        if(mydb.checklogin(Username,Password)){
+        if(!(Username.equals("")) || !(Password.equals(""))){
+            if(mydb.checklogin(Username,Password)){
 
-            Intent intent = new Intent(LoginActivityUser.this, MainActivity.class);
-            startActivity(intent);
-            mydb.showUsername(Username);
+                Intent intent = new Intent(LoginActivityUser.this, MainActivity.class);
+                startActivity(intent);
+                mydb.showUsername(Username);
+            }else{
+                Toast.makeText(LoginActivityUser.this,
+                        "Email or Password not correct (Login Fail) : "+Username+" : "+mydb.checklogin(Username,Password), Toast.LENGTH_SHORT).show();
+            }
         }else{
             Toast.makeText(LoginActivityUser.this,
-                    "Email or Password not correct (Login Fail) : "+Username+" : "+mydb.checklogin(Username,Password), Toast.LENGTH_SHORT).show();
+                    "user or password empty", Toast.LENGTH_SHORT).show();
         }
+
+
+
     }
 
 }
